@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bookworm
 
 ARG ROOT_PASSWORD
 ENV ROOT_PASSWORD=${ROOT_PASSWORD:-live}
@@ -13,10 +13,10 @@ ARG OUTPUT_DIR
 ENV OUPUT_DIR=${OUTPUT_DIR:-/output}
 
 ARG DEB_SUITE
-ENV DEB_SUITE=${DEB_SUITE:-buster}
+ENV DEB_SUITE=${DEB_SUITE:-bookworm}
 
 ARG DEB_MIRROR
-ENV DEB_MIRROR=${DEB_MIRROR:-http://ftp.us.debian.org/debian/}
+ENV DEB_MIRROR=${DEB_MIRROR:-http://ftp.de.debian.org/debian/}
 
 ARG BUILD_DIR
 ENV BUILD_DIR=${BUILD_DIR:-/root/builder}

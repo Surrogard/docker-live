@@ -9,8 +9,8 @@ ROOT_PASSWORD ?= live
 BUILD_DIR ?= /root/builder
 OUTPUT_DIR ?= /output
 SOURCE_DIR ?= /root/src
-DEB_SUITE ?= buster
-DEB_MIRROR ?= http://ftp.us.debian.org/debian/
+DEB_SUITE ?= bookworm
+DEB_MIRROR ?= http://ftp.de.debian.org/debian/
 
 ARTIFACT_DIR = $(CURDIR)/build
 BUILD_IMAGE_NAME = $(PROJECT_NAME)-builder:latest
