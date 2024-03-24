@@ -11,7 +11,14 @@ iputils-ping
 linux-image-amd64
 live-boot
 net-tools
+nfs-common
+cifs-utils
 openssh-server
 systemd-sysv
 traceroute
 vim
+systemd-journal-remote
+python3-cffi-backend
+certbot
+gnupg
+
