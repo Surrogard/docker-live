@@ -1,0 +1,4 @@
+{
+    "insecure-registries":["901b0ec5de9b:5000"],
+    "data-root":"/datadir"
+}

@@ -1,0 +1,8 @@
+[Unit]
+Before=local-fs.target
+
+[Mount]
+What=tmpfs
+Where=/datadir
+Type=tmpfs
+Options=defaults,noatime,size=50g,mode=1777

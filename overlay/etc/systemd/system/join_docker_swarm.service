@@ -1,0 +1,12 @@
+[Unit]
+Description=Join the docker swarm
+After=network-online.target docker.service
+Requires=network-online.target docker.service
+
+[Service]
+Type=simple
+ExecStart=/etc/docker/set_hostname_and_join_swarm.sh
+
+[Install]
+WantedBy=multi-user.target
+
